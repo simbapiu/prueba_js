@@ -1,8 +1,14 @@
 var numPage = 1;
 
 function showDepas() {
-  var url = "https://reqres.in/api/users?page="+numPage;
-  console.log(url);
+  var link = window.location.href;
+  if (link.indexOf('?') > 0) {
+    link = link.split('?')[0];
+  }
+
+  window.history.pushState(null, "", link + '?page=' + numPage);
+  $('#showDepas').hide();
+  var url = "https://reqres.in/api/users?page=" + numPage;
   $.ajax({
     url: url,
     method: "GET"
@@ -10,7 +16,6 @@ function showDepas() {
     var currentPage = document.querySelector('#page');
     currentPage.innerHTML = numPage;
     var totalPages = response.total_pages;
-
     if (response.page !== 1){
       $('#prevPage').show();
     }

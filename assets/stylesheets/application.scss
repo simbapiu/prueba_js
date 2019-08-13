@@ -1,3 +1,5 @@
+@import "resolution_device";
+
 body {
   margin: 0;
   background-color: #cecece;
@@ -6,7 +8,7 @@ body {
 .container {
   margin: 10px;
 
-  @media screen and (min-width: 376px){
+  @media screen and (min-width: $desktop-pixels){
     width: 810px;
     margin: auto;
   }
@@ -35,7 +37,7 @@ body {
   }
 
   .cards {
-    @media screen {
+    @media screen and (min-width: $desktop-pixels){
       width: 790px;
       margin: auto;
     }
@@ -48,7 +50,7 @@ body {
       border-radius: 2px;
       box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 
-      @media screen and (min-width: 376px) {
+      @media screen and (min-width: $desktop-pixels) {
         float: left;
         margin: 20px;
       }
