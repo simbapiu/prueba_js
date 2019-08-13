@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  background-color: #cecece;
+}
+
+.container {
+  margin: 10px;
+
+  @media screen and (min-width: 376px){
+    width: 810px;
+    margin: auto;
+  }
+
+  .title-table {
+    text-align: center;
+    width: 240px;
+    margin: auto;
+
+    .pages {
+      width: 92px;
+      height: 30px;
+      margin: auto;
+
+      button {
+        float: left;
+      }
+
+      #page {
+        width: 20px;
+        height: 30px;
+        padding: 7px 0;
+        float: left;
+      }
+    }
+  }
+
+  .cards {
+    @media screen {
+      width: 790px;
+      margin: auto;
+    }
+
+    .card {
+      margin: 20px 0;
+      width: 355px;
+      height: 143px;
+      background-color: #fff;
+      border-radius: 2px;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+
+      @media screen and (min-width: 376px) {
+        float: left;
+        margin: 20px;
+      }
+
+      .card-container {
+        padding: 8px;
+
+        .depa-images {
+          float: left;
+          width: 100px;
+
+          #image {
+            height: 100px;
+            margin-bottom: 6px;
+
+            img {
+              width: 100px;
+            }
+          }
+
+          label {
+            font-size: 11px;
+            color: #6c5ce7;
+            padding: 0 22px;
+          }
+        }
+
+        .depa-description {
+          float: left;
+          width: 239px;
+
+          .basic-table {
+            height: 100px;
+            padding-left: 10px;
+            margin-bottom: 7px;
+
+            th {
+              font: 14px normal;
+              text-align: left;
+              color: #343a40;
+            }
+
+            th.depa-title {
+              font-size: 16px;
+              font-weight: bold;
+            }
+
+            .full-name {
+              margin-top: 10px;
+            }
+          }
+
+          .tags-comments {
+            width: 230px;
+            font-size: 11px;
+            margin: auto;
+            padding: 3px 0;
+
+            label {
+              color: #fff;
+              border-radius: 2px;
+              padding: 4px 7px;
+              background-color: #6c5ce7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

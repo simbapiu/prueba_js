@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="public/stylesheets/application.css" type="text/css" media="screen">
+  <script type="text/javascript" src="assets/javascript/cards_per_page.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <div class="title-table">
+    <h2>Depas</h2>
+    <button  onclick="showDepas()" >Show Depas</button>
+    <br><br>
+    <div class="pages">
+      <button id="prevPage" onclick="prevPage()"><i class="fa fa-angle-left"></i></button>
+      <div id="page"></div>
+      <button id="nextPage" onclick="nextPage()"><i class="fa fa-angle-right"></i></button>
+    </div>
+    <br>
+  </div>
+  <div class="cards">
+    <div id="card"></div>
+  </div>
+</div>
+</body>
+</html>
